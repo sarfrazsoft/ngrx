@@ -1,0 +1,183 @@
+Here's a comprehensive list of NGRX terms extracted from your lesson plan, along with additional terms where necessary. I will define these terms in detail with code examples where relevant:
+
+1. **Redux Architecture**:
+   - Redux is a predictable state container for JavaScript applications.
+
+2. **Introduction on State Management**:
+   - State management is the process of managing the data that represents the state of your application.
+
+3. **Redux: Three Principles**:
+   - The three core principles of Redux are:
+     - Single source of truth.
+     - State is read-only.
+     - Changes are made with pure functions.
+
+4. **Redux: Core Concepts**:
+   - Core concepts in Redux include store, actions, reducers, and middleware.
+
+5. **Immutable and Mutable JavaScript**:
+   - Immutable data cannot be changed once created, while mutable data can be changed.
+   - In Redux, state should be immutable.
+
+6. **Writing our own Redux Store**:
+   - Creating a custom Redux store from scratch.
+
+7. **Store creation and initial State**:
+   - Creating a Redux store and defining its initial state.
+   ```javascript
+   const initialState = {
+     // Define your initial state properties here
+   };
+   const store = createStore(reducer, initialState);
+   ```
+
+8. **Dispatching Actions**:
+   - Dispatching actions is how you notify the store that something has happened in your application.
+   ```javascript
+   store.dispatch({ type: 'INCREMENT' });
+   ```
+
+9. **All about Reducers**:
+   - Reducers are pure functions that specify how the application's state changes in response to actions.
+
+10. **Store Subscriptions**:
+    - Subscribing to changes in the Redux store.
+    ```javascript
+    store.subscribe(() => {
+      // Handle state changes here
+    });
+    ```
+
+11. **Actions to Action Creators**:
+    - Action creators are functions that create actions.
+    ```javascript
+    const increment = (amount) => ({
+      type: 'INCREMENT',
+      payload: amount,
+    });
+    ```
+
+12. **Architecture: ngrx/store and components**:
+    - The architecture of ngrx/store and its integration with components.
+
+13. **High level ngrx/store**:
+    - An overview of ngrx/store's functionality.
+
+14. **Reactive component architecture**:
+    - Building components in a reactive way using ngrx.
+
+15. **Core Essentials**:
+    - The fundamental concepts and components of NGRX.
+
+16. **Action Constants and Creators**:
+    - Constants and functions for creating actions.
+
+17. **Creating and Registering our Reducer**:
+    - Defining and registering reducers in the store.
+
+18. **State composition with Selectors**:
+    - Selectors are functions that retrieve specific pieces of state from the store.
+    ```javascript
+    const selectCount = (state) => state.count;
+    ```
+
+19. **Effects and Entities**:
+    - Effects are used to manage side effects in ngrx applications.
+
+20. **Concepts of Effects**:
+    - An overview of ngrx effects.
+
+21. **Our first @Effect**:
+    - Implementing your first ngrx effect.
+
+22. **Optimizing Data Structures with Entities**:
+    - Using entities to optimize data storage in the store.
+
+23. **Router State Composition**:
+    - Managing router state in the ngrx store.
+
+24. **Hooking up @ngrx/router-store**:
+    - Integrating router state management with ngrx.
+
+25. **Custom Router State Serializers**:
+    - Customizing the serialization of router state.
+
+26. **Router State and Entity Composition**:
+    - Combining router state with entity state.
+
+27. **Extending our State Tree**:
+    - Expanding the ngrx state tree with additional features.
+
+28. **Further Action Creators**:
+    - Creating more action creators for various actions.
+
+29. **Multiple Reducers**:
+    - Using multiple reducers to manage different parts of the state.
+
+30. **Further Effects**:
+    - Implementing additional ngrx effects.
+
+31. **Selector Composition**:
+    - Composing selectors to retrieve complex data from the store.
+
+32. **Mapping IDs to Entities**:
+    - Mapping IDs to entities for efficient data access.
+
+33. **Store Selectors and Async Pipe**:
+    - Using store selectors in combination with the async pipe.
+
+34. **Entity patterns, CRUD operations**:
+    - Implementing CRUD (Create, Read, Update, Delete) operations on entities in the store.
+
+35. **Creating, via Dispatch, Reducer and Effect**:
+    - Creating entities using actions, reducers, and effects.
+
+36. **Updating, via Dispatch, Reducer and Effect**:
+    - Updating entities in the store via actions, reducers, and effects.
+
+37. **Deleting, via Dispatch, Reducer and Effect**:
+    - Deleting entities from the store via actions, reducers, and effects.
+
+38. **Routing via Dispatch**:
+    - Navigating in the application using dispatched actions.
+
+39. **Router Actions and Effect**:
+    - Handling router actions using ngrx effects.
+
+40. **Multiple Actions in Effects, Router Actions**:
+    - Managing multiple actions in ngrx effects, including router actions.
+
+41. **State preload and protection via Guards**:
+    - Using route guards to protect and preload data in the state.
+
+42. **Preloading across multiple Routes**:
+    - Preloading data for multiple routes using ngrx.
+
+43. **Guards that check Store Entities**:
+    - Route guards that check the existence of specific entities in the store.
+
+44. **One more Guard**:
+    - Adding another route guard for specific scenarios.
+
+45. **Observables and Change Detection**:
+    - Leveraging Observables and the OnPush change detection strategy for performance optimization.
+
+46. **OnPush, everywhere**:
+    - Using the OnPush change detection strategy throughout the application for improved performance.
+
+47. **Unit Testing**:
+    - Testing various aspects of ngrx applications.
+
+48. **Testing Actions**:
+    - Writing unit tests for ngrx actions.
+
+49. **Testing Reducers**:
+    - Unit testing ngrx reducers.
+
+50. **Testing Selectors**:
+    - Writing unit tests for ngrx selectors.
+
+51. **Testing Effects**:
+    - Unit testing ngrx effects.
+
+These are the key terms related to NGRX mentioned in your lesson plan. If you'd like more detailed explanations or code examples for specific terms, please let me know which ones you'd like to explore further.
